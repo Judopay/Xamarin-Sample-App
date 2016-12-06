@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	
+	<style name="JudoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorHint">@color/judo_black_38</item>
+        <item name="android:textColorSecondary">@color/judo_black_54</item>
+        <item name="colorControlNormal">@color/judo_black_16</item>
+        <item name="colorPrimaryDark">@color/judo_dark_blue</item>
+        <item name="colorPrimary">@color/judo_blue</item>
+        <item name="colorButtonNormal">@color/judo_teal</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+	</style>
+
+	<style name="JudoTheme.ActionBar" parent="JudoTheme">
+		<item name="windowNoTitle">false</item>
+		<item name="windowActionBar">true</item>
+	</style>
+	
+	<style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+		<item name="colorAccent">#FF4081</item>
+	</style>
+	
+</resources>
