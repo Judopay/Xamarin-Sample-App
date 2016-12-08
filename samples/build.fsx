@@ -2,7 +2,7 @@
 open Fake
 open Fake.XamarinHelper
 
-let buildDir = "samples/Samples/bin/Debug"
+let buildDir = "Samples/bin/Debug"
 
 Target "Clean" (fun _ ->
     CleanDir buildDir
@@ -15,24 +15,24 @@ Target "Test" (fun _ ->
 Target "Build-Pcl" (fun _ ->
     RestorePackages()
 
-    !! "samples/Samples/Samples.csproj"
-        |> MSBuild "samples/Samples/bin/Debug" "Build"  [ ("Configuration", "Debug"); ("Platform", "Any CPU") ] 
+    !! "Samples/Samples.csproj"
+        |> MSBuild "Samples/bin/Debug" "Build"  [ ("Configuration", "Debug"); ("Platform", "Any CPU") ] 
         |> Log "---PCL build output---"
 )
 
 Target "Build-iOS" (fun _ ->
     iOSBuild (fun defaults -> 
         { 
-            defaults with ProjectPath = "samples/iOS/Samples.iOS.csproj"
-                          OutputPath = "samples/iOS/bin/iPhoneSimulator/Debug"
+            defaults with ProjectPath = "iOS/Samples.iOS.csproj"
+                          OutputPath = "iOS/bin/iPhoneSimulator/Debug"
                           Configuration = "Debug|iPhoneSimulator"
                           Target = "Build"
         })
 )
 
 Target "Build-Droid" (fun _ ->
-    !! "samples/Droid/Samples.Droid.csproj"
-        |> MSBuild "samples/Droid/bin/Debug" "Build" [ ("Configuration", "Debug"); ("Platform", "Any CPU") ]
+    !! "Droid/Samples.Droid.csproj"
+        |> MSBuild "Droid/bin/Debug" "Build" [ ("Configuration", "Debug"); ("Platform", "Any CPU") ]
         |> Log "----Android build output----"
 )
 
