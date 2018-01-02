@@ -21,7 +21,6 @@ namespace Samples.Droid
 			Xamarin.Forms.Forms.Init(this, bundle);
 
 			Window.SetSoftInputMode(SoftInput.AdjustResize);
-			AndroidBugfix5497.assistActivity(this);
 	
 			LoadApplication(new App());
 		}
