@@ -2,13 +2,11 @@
 
 The Judopay library lets you integrate card payments into your Xamarin Forms project. It is built to be mobile first with ease of integration in mind. Judopay's SDK enables a faster, simpler and more secure payment experience within your app. Build trust and user loyalty in your app with our secure and intuitive UX.
 
-##### **\*\*\*Due to industry-wide security updates, versions below 2.3.0 of this SDK will no longer be supported after 1st Oct 2016. For more information regarding these updates, please read our blog [here](http://hub.judopay.com/pci31-security-updates/ "Security Blog").*****
-
 ## Requirements
-- Xamarin Studio 6.1 / Visual Studio 2015
-- Xamarin Forms 2.4.0.282
-- Xcode 8
-- Android 7.0 (API 24) SDK and build tools 24.0.3 installed
+- Visual Studio for Mac 7.3 / Visual Studio 2017
+- Xamarin Forms 2.5.0.122203
+- Xcode 9
+- Android 8.0 (API 26) SDK and build tools 26.0.3
 
 The SDK is compatible with Android Jelly Bean (4.1) and above and iOS 8 and above.
 
@@ -16,8 +14,7 @@ The SDK is compatible with Android Jelly Bean (4.1) and above and iOS 8 and abov
 
 #### 1. Integration
 
-- In the Xamarin component store, search for 'Judopay' and add the component to your Android and iOS projects.
-- In your shared project add a reference to the [Judopay Xamarin SDK .dll file](https://github.com/Judopay/Xamarin-Sample-App/blob/master/samples/lib/JudoDotNetXamarin.dll)
+Add the `Xamarin.JudoPay` NuGet package to your .Net Standard 2.0 Library, Android and iOS projects.
 
 #### 2. Setup
 
