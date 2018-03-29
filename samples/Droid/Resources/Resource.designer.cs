@@ -41,6 +41,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.design_bottom_sheet_slide_out = global::Samples.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.design_snackbar_in = global::Samples.Droid.Resource.Animation.design_snackbar_in;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.design_snackbar_out = global::Samples.Droid.Resource.Animation.design_snackbar_out;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.tooltip_enter = global::Samples.Droid.Resource.Animation.tooltip_enter;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.tooltip_exit = global::Samples.Droid.Resource.Animation.tooltip_exit;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Animator.design_appbar_state_list_animator = global::Samples.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.actionBarDivider = global::Samples.Droid.Resource.Attribute.actionBarDivider;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.actionBarItemBackground = global::Samples.Droid.Resource.Attribute.actionBarItemBackground;
@@ -82,9 +84,15 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.alertDialogTheme = global::Samples.Droid.Resource.Attribute.alertDialogTheme;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.allowStacking = global::Samples.Droid.Resource.Attribute.allowStacking;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.alpha = global::Samples.Droid.Resource.Attribute.alpha;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.alphabeticModifiers = global::Samples.Droid.Resource.Attribute.alphabeticModifiers;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.arrowHeadLength = global::Samples.Droid.Resource.Attribute.arrowHeadLength;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.arrowShaftLength = global::Samples.Droid.Resource.Attribute.arrowShaftLength;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.autoCompleteTextViewStyle = global::Samples.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.autoSizeMaxTextSize = global::Samples.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.autoSizeMinTextSize = global::Samples.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.autoSizePresetSizes = global::Samples.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.autoSizeStepGranularity = global::Samples.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.autoSizeTextType = global::Samples.Droid.Resource.Attribute.autoSizeTextType;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.background = global::Samples.Droid.Resource.Attribute.background;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.backgroundSplit = global::Samples.Droid.Resource.Attribute.backgroundSplit;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.backgroundStacked = global::Samples.Droid.Resource.Attribute.backgroundStacked;
@@ -132,10 +140,12 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorControlActivated = global::Samples.Droid.Resource.Attribute.colorControlActivated;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorControlHighlight = global::Samples.Droid.Resource.Attribute.colorControlHighlight;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorControlNormal = global::Samples.Droid.Resource.Attribute.colorControlNormal;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorError = global::Samples.Droid.Resource.Attribute.colorError;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorPrimary = global::Samples.Droid.Resource.Attribute.colorPrimary;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorPrimaryDark = global::Samples.Droid.Resource.Attribute.colorPrimaryDark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.colorSwitchThumbNormal = global::Samples.Droid.Resource.Attribute.colorSwitchThumbNormal;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.commitIcon = global::Samples.Droid.Resource.Attribute.commitIcon;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.contentDescription = global::Samples.Droid.Resource.Attribute.contentDescription;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.contentInsetEnd = global::Samples.Droid.Resource.Attribute.contentInsetEnd;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.contentInsetEndWithActions = global::Samples.Droid.Resource.Attribute.contentInsetEndWithActions;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.contentInsetLeft = global::Samples.Droid.Resource.Attribute.contentInsetLeft;
@@ -183,6 +193,21 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.expandedTitleTextAppearance = global::Samples.Droid.Resource.Attribute.expandedTitleTextAppearance;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.externalRouteEnabledDrawable = global::Samples.Droid.Resource.Attribute.externalRouteEnabledDrawable;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fabSize = global::Samples.Droid.Resource.Attribute.fabSize;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fastScrollEnabled = global::Samples.Droid.Resource.Attribute.fastScrollEnabled;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::Samples.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::Samples.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fastScrollVerticalThumbDrawable = global::Samples.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fastScrollVerticalTrackDrawable = global::Samples.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.font = global::Samples.Droid.Resource.Attribute.font;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontFamily = global::Samples.Droid.Resource.Attribute.fontFamily;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontProviderAuthority = global::Samples.Droid.Resource.Attribute.fontProviderAuthority;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontProviderCerts = global::Samples.Droid.Resource.Attribute.fontProviderCerts;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontProviderFetchStrategy = global::Samples.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontProviderFetchTimeout = global::Samples.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontProviderPackage = global::Samples.Droid.Resource.Attribute.fontProviderPackage;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontProviderQuery = global::Samples.Droid.Resource.Attribute.fontProviderQuery;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontStyle = global::Samples.Droid.Resource.Attribute.fontStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.fontWeight = global::Samples.Droid.Resource.Attribute.fontWeight;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.foregroundInsidePadding = global::Samples.Droid.Resource.Attribute.foregroundInsidePadding;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.gapBetweenBars = global::Samples.Droid.Resource.Attribute.gapBetweenBars;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.goIcon = global::Samples.Droid.Resource.Attribute.goIcon;
@@ -195,6 +220,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.homeAsUpIndicator = global::Samples.Droid.Resource.Attribute.homeAsUpIndicator;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.homeLayout = global::Samples.Droid.Resource.Attribute.homeLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.icon = global::Samples.Droid.Resource.Attribute.icon;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.iconTint = global::Samples.Droid.Resource.Attribute.iconTint;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.iconTintMode = global::Samples.Droid.Resource.Attribute.iconTintMode;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.iconifiedByDefault = global::Samples.Droid.Resource.Attribute.iconifiedByDefault;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.imageButtonStyle = global::Samples.Droid.Resource.Attribute.imageButtonStyle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.indeterminateProgressStyle = global::Samples.Droid.Resource.Attribute.indeterminateProgressStyle;
@@ -237,6 +264,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.measureWithLargestChild = global::Samples.Droid.Resource.Attribute.measureWithLargestChild;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Samples.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.mediaRouteButtonStyle = global::Samples.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.mediaRouteButtonTint = global::Samples.Droid.Resource.Attribute.mediaRouteButtonTint;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.mediaRouteCloseDrawable = global::Samples.Droid.Resource.Attribute.mediaRouteCloseDrawable;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Samples.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Samples.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
@@ -252,6 +280,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.navigationContentDescription = global::Samples.Droid.Resource.Attribute.navigationContentDescription;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.navigationIcon = global::Samples.Droid.Resource.Attribute.navigationIcon;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.navigationMode = global::Samples.Droid.Resource.Attribute.navigationMode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.numericModifiers = global::Samples.Droid.Resource.Attribute.numericModifiers;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.overlapAnchor = global::Samples.Droid.Resource.Attribute.overlapAnchor;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.paddingBottomNoButtons = global::Samples.Droid.Resource.Attribute.paddingBottomNoButtons;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.paddingEnd = global::Samples.Droid.Resource.Attribute.paddingEnd;
@@ -368,6 +397,9 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.toolbarId = global::Samples.Droid.Resource.Attribute.toolbarId;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.toolbarNavigationButtonStyle = global::Samples.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.toolbarStyle = global::Samples.Droid.Resource.Attribute.toolbarStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.tooltipForegroundColor = global::Samples.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.tooltipFrameBackground = global::Samples.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.tooltipText = global::Samples.Droid.Resource.Attribute.tooltipText;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.track = global::Samples.Droid.Resource.Attribute.track;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.trackTint = global::Samples.Droid.Resource.Attribute.trackTint;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Attribute.trackTintMode = global::Samples.Droid.Resource.Attribute.trackTintMode;
@@ -445,6 +477,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.dim_foreground_disabled_material_light = global::Samples.Droid.Resource.Color.dim_foreground_disabled_material_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.dim_foreground_material_dark = global::Samples.Droid.Resource.Color.dim_foreground_material_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.dim_foreground_material_light = global::Samples.Droid.Resource.Color.dim_foreground_material_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.error_color_material = global::Samples.Droid.Resource.Color.error_color_material;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.foreground_material_dark = global::Samples.Droid.Resource.Color.foreground_material_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.foreground_material_light = global::Samples.Droid.Resource.Color.foreground_material_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.highlighted_text_material_dark = global::Samples.Droid.Resource.Color.highlighted_text_material_dark;
@@ -495,6 +528,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.switch_thumb_material_light = global::Samples.Droid.Resource.Color.switch_thumb_material_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.switch_thumb_normal_material_dark = global::Samples.Droid.Resource.Color.switch_thumb_normal_material_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Color.switch_thumb_normal_material_light = global::Samples.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.tooltip_background_dark = global::Samples.Droid.Resource.Color.tooltip_background_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.tooltip_background_light = global::Samples.Droid.Resource.Color.tooltip_background_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.abc_action_bar_content_inset_material = global::Samples.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Samples.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.abc_action_bar_default_height_material = global::Samples.Droid.Resource.Dimension.abc_action_bar_default_height_material;
@@ -572,6 +607,11 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.cardview_compat_inset_shadow = global::Samples.Droid.Resource.Dimension.cardview_compat_inset_shadow;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.cardview_default_elevation = global::Samples.Droid.Resource.Dimension.cardview_default_elevation;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.cardview_default_radius = global::Samples.Droid.Resource.Dimension.cardview_default_radius;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.compat_button_inset_horizontal_material = global::Samples.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.compat_button_inset_vertical_material = global::Samples.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.compat_button_padding_horizontal_material = global::Samples.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.compat_button_padding_vertical_material = global::Samples.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.compat_control_corner_material = global::Samples.Droid.Resource.Dimension.compat_control_corner_material;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.design_appbar_elevation = global::Samples.Droid.Resource.Dimension.design_appbar_elevation;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Samples.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.design_bottom_navigation_active_text_size = global::Samples.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
@@ -612,6 +652,9 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.design_tab_text_size_2line = global::Samples.Droid.Resource.Dimension.design_tab_text_size_2line;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.disabled_alpha_material_dark = global::Samples.Droid.Resource.Dimension.disabled_alpha_material_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.disabled_alpha_material_light = global::Samples.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.fastscroll_default_thickness = global::Samples.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.fastscroll_margin = global::Samples.Droid.Resource.Dimension.fastscroll_margin;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.fastscroll_minimum_range = global::Samples.Droid.Resource.Dimension.fastscroll_minimum_range;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.highlight_alpha_material_colored = global::Samples.Droid.Resource.Dimension.highlight_alpha_material_colored;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.highlight_alpha_material_dark = global::Samples.Droid.Resource.Dimension.highlight_alpha_material_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.highlight_alpha_material_light = global::Samples.Droid.Resource.Dimension.highlight_alpha_material_light;
@@ -643,6 +686,14 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.notification_subtext_size = global::Samples.Droid.Resource.Dimension.notification_subtext_size;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.notification_top_pad = global::Samples.Droid.Resource.Dimension.notification_top_pad;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.notification_top_pad_large_text = global::Samples.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_corner_radius = global::Samples.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_horizontal_padding = global::Samples.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_margin = global::Samples.Droid.Resource.Dimension.tooltip_margin;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::Samples.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_precise_anchor_threshold = global::Samples.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_vertical_padding = global::Samples.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_y_offset_non_touch = global::Samples.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.tooltip_y_offset_touch = global::Samples.Droid.Resource.Dimension.tooltip_y_offset_touch;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Samples.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.abc_action_bar_item_background_material = global::Samples.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.abc_btn_borderless_material = global::Samples.Droid.Resource.Drawable.abc_btn_borderless_material;
@@ -836,6 +887,22 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_21_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_22_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_22_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_23_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_23_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_24_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_24_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_25_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_25_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_26_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_26_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_27_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_27_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_28_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_28_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_29_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_29_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_30_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connected_30_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_00_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
@@ -882,6 +949,22 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_21_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_22_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_23_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_23_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_24_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_24_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_25_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_25_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_26_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_26_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_27_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_27_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_28_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_28_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_29_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_29_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_30_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_connecting_30_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_disabled_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_disabled_light = global::Samples.Droid.Resource.Drawable.ic_mr_button_disabled_light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_mr_button_disconnected_dark = global::Samples.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
@@ -926,6 +1009,14 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.notification_template_icon_low_bg = global::Samples.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.notification_tile_bg = global::Samples.Droid.Resource.Drawable.notification_tile_bg;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.notify_panel_notification_icon_bg = global::Samples.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.tooltip_frame_dark = global::Samples.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.tooltip_frame_light = global::Samples.Droid.Resource.Drawable.tooltip_frame_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.ALT = global::Samples.Droid.Resource.Id.ALT;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.CTRL = global::Samples.Droid.Resource.Id.CTRL;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.FUNCTION = global::Samples.Droid.Resource.Id.FUNCTION;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.META = global::Samples.Droid.Resource.Id.META;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.SHIFT = global::Samples.Droid.Resource.Id.SHIFT;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.SYM = global::Samples.Droid.Resource.Id.SYM;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.action0 = global::Samples.Droid.Resource.Id.action0;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.action_bar = global::Samples.Droid.Resource.Id.action_bar;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.action_bar_activity_content = global::Samples.Droid.Resource.Id.action_bar_activity_content;
@@ -950,8 +1041,10 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.alertTitle = global::Samples.Droid.Resource.Id.alertTitle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.all = global::Samples.Droid.Resource.Id.all;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.always = global::Samples.Droid.Resource.Id.always;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.async = global::Samples.Droid.Resource.Id.async;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.auto = global::Samples.Droid.Resource.Id.auto;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.beginning = global::Samples.Droid.Resource.Id.beginning;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.blocking = global::Samples.Droid.Resource.Id.blocking;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.bottom = global::Samples.Droid.Resource.Id.bottom;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.buttonPanel = global::Samples.Droid.Resource.Id.buttonPanel;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.cancel_action = global::Samples.Droid.Resource.Id.cancel_action;
@@ -988,6 +1081,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.fill_horizontal = global::Samples.Droid.Resource.Id.fill_horizontal;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.fill_vertical = global::Samples.Droid.Resource.Id.fill_vertical;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.@fixed = global::Samples.Droid.Resource.Id.@fixed;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.forever = global::Samples.Droid.Resource.Id.forever;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.ghost_view = global::Samples.Droid.Resource.Id.ghost_view;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.home = global::Samples.Droid.Resource.Id.home;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.homeAsUp = global::Samples.Droid.Resource.Id.homeAsUp;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.icon = global::Samples.Droid.Resource.Id.icon;
@@ -995,6 +1090,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.ifRoom = global::Samples.Droid.Resource.Id.ifRoom;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.image = global::Samples.Droid.Resource.Id.image;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.info = global::Samples.Droid.Resource.Id.info;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.italic = global::Samples.Droid.Resource.Id.italic;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.item_touch_helper_previous_elevation = global::Samples.Droid.Resource.Id.item_touch_helper_previous_elevation;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.largeLabel = global::Samples.Droid.Resource.Id.largeLabel;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.left = global::Samples.Droid.Resource.Id.left;
@@ -1004,6 +1100,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.list_item = global::Samples.Droid.Resource.Id.list_item;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.masked = global::Samples.Droid.Resource.Id.masked;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.media_actions = global::Samples.Droid.Resource.Id.media_actions;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.message = global::Samples.Droid.Resource.Id.message;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.middle = global::Samples.Droid.Resource.Id.middle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.mini = global::Samples.Droid.Resource.Id.mini;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.mr_art = global::Samples.Droid.Resource.Id.mr_art;
@@ -1041,6 +1138,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.notification_main_column_container = global::Samples.Droid.Resource.Id.notification_main_column_container;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.parallax = global::Samples.Droid.Resource.Id.parallax;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.parentPanel = global::Samples.Droid.Resource.Id.parentPanel;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.parent_matrix = global::Samples.Droid.Resource.Id.parent_matrix;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.pin = global::Samples.Droid.Resource.Id.pin;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.progress_circular = global::Samples.Droid.Resource.Id.progress_circular;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.progress_horizontal = global::Samples.Droid.Resource.Id.progress_horizontal;
@@ -1050,6 +1148,9 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.right = global::Samples.Droid.Resource.Id.right;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.right_icon = global::Samples.Droid.Resource.Id.right_icon;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.right_side = global::Samples.Droid.Resource.Id.right_side;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.save_image_matrix = global::Samples.Droid.Resource.Id.save_image_matrix;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.save_non_transition_alpha = global::Samples.Droid.Resource.Id.save_non_transition_alpha;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.save_scale_type = global::Samples.Droid.Resource.Id.save_scale_type;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.screen = global::Samples.Droid.Resource.Id.screen;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.scroll = global::Samples.Droid.Resource.Id.scroll;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.scrollIndicatorDown = global::Samples.Droid.Resource.Id.scrollIndicatorDown;
@@ -1102,7 +1203,11 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.topPanel = global::Samples.Droid.Resource.Id.topPanel;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.touch_outside = global::Samples.Droid.Resource.Id.touch_outside;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.transition_current_scene = global::Samples.Droid.Resource.Id.transition_current_scene;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.transition_layout_save = global::Samples.Droid.Resource.Id.transition_layout_save;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.transition_position = global::Samples.Droid.Resource.Id.transition_position;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.transition_scene_layoutid_cache = global::Samples.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.transition_transform = global::Samples.Droid.Resource.Id.transition_transform;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.uniform = global::Samples.Droid.Resource.Id.uniform;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.up = global::Samples.Droid.Resource.Id.up;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.useLogo = global::Samples.Droid.Resource.Id.useLogo;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.view_offset_helper = global::Samples.Droid.Resource.Id.view_offset_helper;
@@ -1115,6 +1220,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.app_bar_elevation_anim_duration = global::Samples.Droid.Resource.Integer.app_bar_elevation_anim_duration;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.bottom_sheet_slide_duration = global::Samples.Droid.Resource.Integer.bottom_sheet_slide_duration;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.cancel_button_image_alpha = global::Samples.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.config_tooltipAnimTime = global::Samples.Droid.Resource.Integer.config_tooltipAnimTime;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.design_snackbar_text_max_lines = global::Samples.Droid.Resource.Integer.design_snackbar_text_max_lines;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.hide_password_duration = global::Samples.Droid.Resource.Integer.hide_password_duration;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Samples.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
@@ -1194,6 +1300,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.support_simple_spinner_dropdown_item = global::Samples.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.Tabbar = global::Samples.Droid.Resource.Layout.Tabbar;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.Toolbar = global::Samples.Droid.Resource.Layout.Toolbar;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.tooltip = global::Samples.Droid.Resource.Layout.tooltip;
 			global::JudoDotNetXamarinAndroidSDK.Resource.String.abc_action_bar_home_description = global::Samples.Droid.Resource.String.abc_action_bar_home_description;
 			global::JudoDotNetXamarinAndroidSDK.Resource.String.abc_action_bar_home_description_format = global::Samples.Droid.Resource.String.abc_action_bar_home_description_format;
 			global::JudoDotNetXamarinAndroidSDK.Resource.String.abc_action_bar_home_subtitle_description_format = global::Samples.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
@@ -1261,12 +1368,14 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.AlertDialog_AppCompat_Light = global::Samples.Droid.Resource.Style.AlertDialog_AppCompat_Light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Animation_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Animation_AppCompat_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Animation_AppCompat_DropDownUp = global::Samples.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Animation_AppCompat_Tooltip = global::Samples.Droid.Resource.Style.Animation_AppCompat_Tooltip;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Animation_Design_BottomSheetDialog = global::Samples.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.AppCompatDialogStyle = global::Samples.Droid.Resource.Style.AppCompatDialogStyle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_AlertDialog_AppCompat = global::Samples.Droid.Resource.Style.Base_AlertDialog_AppCompat;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Samples.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_Animation_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Samples.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Samples.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_CardView = global::Samples.Droid.Resource.Style.Base_CardView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Samples.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Samples.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
@@ -1297,6 +1406,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Samples.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
@@ -1343,15 +1453,21 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Samples.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Samples.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::Samples.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V21_Theme_AppCompat = global::Samples.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Samples.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Samples.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::Samples.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V22_Theme_AppCompat = global::Samples.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Samples.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V23_Theme_AppCompat = global::Samples.Droid.Resource.Style.Base_V23_Theme_AppCompat;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Samples.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V26_Theme_AppCompat = global::Samples.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Samples.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Samples.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::Samples.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_Theme_AppCompat = global::Samples.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Samples.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -1359,6 +1475,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Samples.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Samples.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Samples.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Samples.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Samples.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Samples.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Samples.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
@@ -1489,6 +1606,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Title = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Title;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Tooltip = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
@@ -1508,6 +1626,16 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Samples.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Info = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Media = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Time = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Title = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::Samples.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Samples.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Design_Counter = global::Samples.Droid.Resource.Style.TextAppearance_Design_Counter;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Samples.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
@@ -1633,6 +1761,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Samples.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_AppCompat_Toolbar = global::Samples.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Samples.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_Compat_NotificationActionContainer = global::Samples.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_Compat_NotificationActionText = global::Samples.Droid.Resource.Style.Widget_Compat_NotificationActionText;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_Design_AppBarLayout = global::Samples.Droid.Resource.Style.Widget_Design_AppBarLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_Design_BottomNavigationView = global::Samples.Droid.Resource.Style.Widget_Design_BottomNavigationView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Widget_Design_BottomSheet_Modal = global::Samples.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
@@ -1701,6 +1831,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Samples.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayout = global::Samples.Droid.Resource.Styleable.AppBarLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayout_android_background = global::Samples.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Samples.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Samples.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayout_elevation = global::Samples.Droid.Resource.Styleable.AppBarLayout_elevation;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayout_expanded = global::Samples.Droid.Resource.Styleable.AppBarLayout_expanded;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppBarLayoutStates = global::Samples.Droid.Resource.Styleable.AppBarLayoutStates;
@@ -1729,6 +1861,12 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Samples.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView = global::Samples.Droid.Resource.Styleable.AppCompatTextView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Samples.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::Samples.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::Samples.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Samples.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Samples.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Samples.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_fontFamily = global::Samples.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTextView_textAllCaps = global::Samples.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme = global::Samples.Droid.Resource.Styleable.AppCompatTheme;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Samples.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
@@ -1785,6 +1923,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorError = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorError;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorPrimary = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Samples.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
@@ -1837,6 +1976,8 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Samples.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Samples.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Samples.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Samples.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Samples.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_windowActionBar = global::Samples.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Samples.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Samples.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
@@ -1936,6 +2077,17 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Samples.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Samples.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Samples.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily = global::Samples.Droid.Resource.Styleable.FontFamily;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderAuthority = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderCerts = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderPackage = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderQuery = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont = global::Samples.Droid.Resource.Styleable.FontFamilyFont;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_font = global::Samples.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_fontStyle = global::Samples.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_fontWeight = global::Samples.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.ForegroundLinearLayout = global::Samples.Droid.Resource.Styleable.ForegroundLinearLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Samples.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Samples.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
@@ -1962,6 +2114,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MediaRouteButton_android_minHeight = global::Samples.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MediaRouteButton_android_minWidth = global::Samples.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Samples.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::Samples.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuGroup = global::Samples.Droid.Resource.Styleable.MenuGroup;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Samples.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuGroup_android_enabled = global::Samples.Droid.Resource.Styleable.MenuGroup_android_enabled;
@@ -1973,6 +2126,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_actionLayout = global::Samples.Droid.Resource.Styleable.MenuItem_actionLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_actionProviderClass = global::Samples.Droid.Resource.Styleable.MenuItem_actionProviderClass;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_actionViewClass = global::Samples.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_alphabeticModifiers = global::Samples.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Samples.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_android_checkable = global::Samples.Droid.Resource.Styleable.MenuItem_android_checkable;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_android_checked = global::Samples.Droid.Resource.Styleable.MenuItem_android_checked;
@@ -1986,7 +2140,12 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_android_title = global::Samples.Droid.Resource.Styleable.MenuItem_android_title;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_android_titleCondensed = global::Samples.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_android_visible = global::Samples.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_contentDescription = global::Samples.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_iconTint = global::Samples.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_iconTintMode = global::Samples.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_numericModifiers = global::Samples.Droid.Resource.Styleable.MenuItem_numericModifiers;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_showAsAction = global::Samples.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuItem_tooltipText = global::Samples.Droid.Resource.Styleable.MenuItem_tooltipText;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuView = global::Samples.Droid.Resource.Styleable.MenuView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuView_android_headerBackground = global::Samples.Droid.Resource.Styleable.MenuView_android_headerBackground;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.MenuView_android_horizontalDivider = global::Samples.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
@@ -2020,6 +2179,11 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView = global::Samples.Droid.Resource.Styleable.RecyclerView;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Samples.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_android_orientation = global::Samples.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_fastScrollEnabled = global::Samples.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::Samples.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::Samples.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::Samples.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::Samples.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_layoutManager = global::Samples.Droid.Resource.Styleable.RecyclerView_layoutManager;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_reverseLayout = global::Samples.Droid.Resource.Styleable.RecyclerView_reverseLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.RecyclerView_spanCount = global::Samples.Droid.Resource.Styleable.RecyclerView_spanCount;
@@ -2093,15 +2257,18 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TabLayout_tabTextAppearance = global::Samples.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TabLayout_tabTextColor = global::Samples.Droid.Resource.Styleable.TabLayout_tabTextColor;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance = global::Samples.Droid.Resource.Styleable.TextAppearance;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_fontFamily = global::Samples.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_shadowColor = global::Samples.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_shadowDx = global::Samples.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_shadowDy = global::Samples.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_shadowRadius = global::Samples.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_textColor = global::Samples.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_textColorHint = global::Samples.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_textColorLink = global::Samples.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_textSize = global::Samples.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_textStyle = global::Samples.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_android_typeface = global::Samples.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_fontFamily = global::Samples.Droid.Resource.Styleable.TextAppearance_fontFamily;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextAppearance_textAllCaps = global::Samples.Droid.Resource.Styleable.TextAppearance_textAllCaps;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextInputLayout = global::Samples.Droid.Resource.Styleable.TextInputLayout;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.TextInputLayout_android_hint = global::Samples.Droid.Resource.Styleable.TextInputLayout_android_hint;
@@ -6512,6 +6679,9 @@ namespace Samples.Droid
 			
 			// aapt resource value: 0x7f030046
 			public const int tooltip = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int wallet_test_layout = 2130903111;
 			
 			static Layout()
 			{
