@@ -17,6 +17,9 @@ Components/
 
 .DS_Store
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

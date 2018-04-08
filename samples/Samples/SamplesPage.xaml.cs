@@ -41,6 +41,7 @@ namespace SampleApp
                 AmexAccepted = Settings.AmexAllowed,
                 AvsEnabled = Settings.AvsEnabled,
                 ConsumerReference = "XamarinSdkConsumerRef",
+                MetaData = new Dictionary<string, string> { { "SampleApp", "true" } }
                 /*Theme = new Theme
 				{
 					PrimaryColor = Color.White,
@@ -97,16 +98,10 @@ namespace SampleApp
                 var service = DependencyService.Get<IAndroidPayService>();
 
                 androidPayPaymentButton.IsVisible = true;
-                androidPayPaymentButton.Clicked += (sender, e) =>
-                {
-                    service.payment(BuildJudo());
-                };
+                androidPayPaymentButton.Clicked += (sender, e) => service.payment(BuildJudo());
 
                 androidPayPreAuthButton.IsVisible = true;
-                androidPayPreAuthButton.Clicked += (sender, e) =>
-                {
-                    service.preAuth(BuildJudo());
-                };
+                androidPayPreAuthButton.Clicked += (sender, e) => service.preAuth(BuildJudo());
             }
         }
 
