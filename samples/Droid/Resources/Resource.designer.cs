@@ -1187,6 +1187,7 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.submenuarrow = global::Samples.Droid.Resource.Id.submenuarrow;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.submit_area = global::Samples.Droid.Resource.Id.submit_area;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.tabMode = global::Samples.Droid.Resource.Id.tabMode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.tag_transition_group = global::Samples.Droid.Resource.Id.tag_transition_group;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.text = global::Samples.Droid.Resource.Id.text;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.text2 = global::Samples.Droid.Resource.Id.text2;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Id.textSpacerNoButtons = global::Samples.Droid.Resource.Id.textSpacerNoButtons;
@@ -2072,6 +2073,9 @@ namespace Samples.Droid
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderPackage = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamily_fontProviderQuery = global::Samples.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont = global::Samples.Droid.Resource.Styleable.FontFamilyFont;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_android_font = global::Samples.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Samples.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Samples.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_font = global::Samples.Droid.Resource.Styleable.FontFamilyFont_font;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_fontStyle = global::Samples.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
 			global::JudoDotNetXamarinAndroidSDK.Resource.Styleable.FontFamilyFont_fontWeight = global::Samples.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
