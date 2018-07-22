@@ -1,17 +1,17 @@
-﻿using Android.App;
+﻿using System.Threading.Tasks;
+using Android.App;
+using Android.Content;
+using Android.Content.PM;
+using Android.Gms.Common;
 using Android.Gms.Common.Apis;
+using Android.Gms.Wallet;
+using Android.Gms.Wallet.Fragment;
 using Android.OS;
 using Android.Support.V7.App;
-using Android.Gms.Wallet;
-using Android.Gms.Common;
-using Android.Content;
+using Android.Widget;
 using JudoDotNetXamarin;
 using JudoPayDotNet.Models;
-using Android.Gms.Wallet.Fragment;
-using Android.Widget;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
-using Android.Content.PM;
 
 namespace Samples.Droid
 {
