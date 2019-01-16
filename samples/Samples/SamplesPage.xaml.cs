@@ -29,7 +29,7 @@ namespace SampleApp
 
         Judo BuildJudo()
         {
-            return new Judo()
+            return new Judo
             {
                 JudoId = "<JUDO_ID>",
                 Token = "<API_TOKEN>",
