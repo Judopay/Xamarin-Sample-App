@@ -168,7 +168,7 @@ namespace Samples.Droid
                                                .Build();
 
             var parameters = PaymentMethodTokenizationParameters.NewBuilder()
-                                                                .SetPaymentMethodTokenizationType(PaymentMethodTokenizationType.NetworkToken)
+                                                                .SetPaymentMethodTokenizationType(WalletConstants.PaymentMethodTokenizationTypeNetworkToken)
                                                                 .AddParameter("publicKey", Resources.GetString(Resource.String.public_key))
                                                                 .Build();
 
