@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="Settings" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleApp.SettingsPage" xmlns:local="clr-namespace:SampleApp;assembly=SampleApp">
-	<ContentPage.Content>
-		<StackLayout>
-			<TableView>
-				<TableSection>
-					<SwitchCell x:Name="avsSwitch" AutomationId="avsSwitch" Text="Address Verification Service (AVS)" />
-					<SwitchCell x:Name="maestroSwitch" AutomationId="maestroSwitch" Text="Maestro" />
-					<SwitchCell x:Name="amexSwitch" AutomationId="amexSwitch" Text="American Express" />
-					<ViewCell>
-						<ViewCell.View Padding="16, 16">
-								<Picker x:Name="currencyPicker" Title="Currency" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-								   <Picker.Items>
-							        </Picker.Items>
-								</Picker>
-						</ViewCell.View>
-					</ViewCell>
-				</TableSection>
-			</TableView>
-		</StackLayout>
-	</ContentPage.Content>
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableSection>
+                    <SwitchCell x:Name="avsSwitch" AutomationId="avsSwitch" Text="Address Verification Service (AVS)" />
+                    <SwitchCell x:Name="maestroSwitch" AutomationId="maestroSwitch" Text="Maestro" />
+                    <SwitchCell x:Name="amexSwitch" AutomationId="amexSwitch" Text="American Express" />
+                    <ViewCell>
+                        <ViewCell.View Padding="16, 16">
+                            <Picker x:Name="currencyPicker" Title="Currency" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                <Picker.Items>
+                                </Picker.Items>
+                            </Picker>
+                        </ViewCell.View>
+                    </ViewCell>
+                </TableSection>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
