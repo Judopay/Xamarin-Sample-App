@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace SampleApp
 {
-    public partial class SamplesPage : KeyboardAwarePage
+    public partial class SamplesPage : ContentPage
     {
         IApplePayService _applePayService;
 
@@ -27,46 +27,41 @@ namespace SampleApp
             }));
         }
 
-        Judo BuildJudo()
+        Judo BuildJudo(JudoEnvironment environment = JudoEnvironment.Sandbox)
         {
+            // A! - on Android these properties are only customisable through styles.xml - see https://github.com/Judopay/Xamarin-Sample-App/wiki/Theme-reference
+            var theme = new Theme
+            {
+                PageTitle = "Card details",
+                ButtonLabel = "Authorize payment",
+                ShowSecurityMessage = true,
+                SecurityMessageTextColor = Color.Green,
+                ButtonTextColor = Color.Orange,
+                ButtonBackgroundColor = Color.DarkRed,
+                BackgroundColor = Color.LightGray,
+                EntryTextColor = Color.DarkOrange,
+                LabelActiveTextColor = Color.Yellow, // A!
+                LabelInactiveTextColor = Color.LightPink, // A!
+                PlaceholderTextColor = Color.Fuchsia, // A!
+                ErrorTextColor = Color.DarkRed, // A!
+                OverlayBackgroundColor = Color.Black.MultiplyAlpha(0.7)
+            };
+
             return new Judo
             {
                 JudoId = "<JUDO_ID>",
                 Token = "<API_TOKEN>",
                 Secret = "<API_SECRET>",
-                Environment = JudoEnvironment.Sandbox,
+                Environment = environment,
                 Amount = 0.01m,
                 Currency = Settings.Currency,
                 MaestroAccepted = Settings.MaestroAllowed,
                 AmexAccepted = Settings.AmexAllowed,
                 AvsEnabled = Settings.AvsEnabled,
                 ConsumerReference = "XamarinSdkConsumerRef",
-                MetaData = new Dictionary<string, string> { { "SampleApp", "true" } }
-                /*Theme = new Theme
-				{
-					PrimaryColor = Color.White,
-					BackgroundColor = Color.FromHex("273338"),
-					ButtonBackgroundColor = Color.FromHex("F0C559"),
-					ButtonTextColor = Color.FromHex("273338"),
-					HintTextColor = Color.FromHex("A8ADAE"),
-					LabelTextColor = Color.White,
-					SecondaryTextColor = Color.Fuchsia,
-					ButtonLabel = "PAY NOW!",
-					EntryLabelPLaceholderColor = Color.FromHex("F0C559")
-				}*/
+                MetaData = new Dictionary<string, string> { { "SampleApp", "true" } },
+                //Theme = theme
             };
-        }
-
-        Judo BuildJudoForApplePay()
-        {
-            var judo = BuildJudo();
-
-            judo.JudoId = "<JUDO_ID>";
-            judo.Token = "<API_TOKEN>";
-            judo.Secret = "<API_SECRET>";
-            judo.Environment = JudoEnvironment.Live;
-
-            return judo;
         }
 
         public void InitializeView()
@@ -98,31 +93,31 @@ namespace SampleApp
                 var service = DependencyService.Get<IAndroidPayService>();
 
                 androidPayPaymentButton.IsVisible = true;
-                androidPayPaymentButton.Clicked += (sender, e) => service.payment(BuildJudo());
+                androidPayPaymentButton.Clicked += (sender, e) => service.Payment(BuildJudo());
 
                 androidPayPreAuthButton.IsVisible = true;
-                androidPayPreAuthButton.Clicked += (sender, e) => service.preAuth(BuildJudo());
+                androidPayPreAuthButton.Clicked += (sender, e) => service.PreAuth(BuildJudo());
             }
         }
 
         void ShowPreAuthForm(object sender, EventArgs e)
         {
             var preAuthPage = new PreAuthPage(BuildJudo());
-            preAuthPage.resultHandler += PreAuthHandler;
+            preAuthPage.ResultHandler += PreAuthResultHandler;
             Navigation.PushAsync(preAuthPage);
         }
 
         void ShowPaymentForm(object sender, EventArgs e)
         {
             var paymentPage = new PaymentPage(BuildJudo());
-            paymentPage.resultHandler += Handler;
+            paymentPage.ResultHandler += PaymentResultHandler;
             Navigation.PushAsync(paymentPage);
         }
 
         void ShowAddCard(object sender, EventArgs e)
         {
             var page = new RegisterCardPage(BuildJudo());
-            page.resultHandler += RegisterCardHandler;
+            page.ResultHandler += RegisterCardHandler;
             Navigation.PushAsync(page);
         }
 
@@ -131,8 +126,7 @@ namespace SampleApp
             if (!string.IsNullOrWhiteSpace(Settings.CardToken))
             {
                 var page = new TokenPaymentPage(BuildJudo(), GetTokenViewModel());
-                page.resultHandler += Handler;
-
+                page.ResultHandler += PaymentResultHandler;
                 await Navigation.PushAsync(page);
             }
             else
@@ -146,8 +140,7 @@ namespace SampleApp
             if (!string.IsNullOrWhiteSpace(Settings.CardToken))
             {
                 var page = new TokenPreAuthPage(BuildJudo(), GetTokenViewModel());
-                page.resultHandler += PreAuthHandler;
-
+                page.ResultHandler += PreAuthResultHandler;
                 await Navigation.PushAsync(page);
             }
             else
@@ -164,15 +157,15 @@ namespace SampleApp
 
         void PerformApplePayPayment(object sender, EventArgs e)
         {
-            _applePayService.Payment(BuildJudoForApplePay(), BuildWalletModel(), ApplePaySucces, ApplePayFailure);
+            _applePayService.Payment(BuildJudo(JudoEnvironment.Live), BuildWalletModel(), ApplePaySuccess, ApplePayFailure);
         }
 
         void PerformApplePayPreAuth(object sender, EventArgs e)
         {
-            _applePayService.PreAuth(BuildJudoForApplePay(), BuildWalletModel(), ApplePaySucces, ApplePayFailure);
+            _applePayService.PreAuth(BuildJudo(JudoEnvironment.Live), BuildWalletModel(), ApplePaySuccess, ApplePayFailure);
         }
 
-        public async void ApplePaySucces(PaymentReceiptModel receipt)
+        public async void ApplePaySuccess(PaymentReceiptModel receipt)
         {
             await Navigation.PopAsync();
             await DisplayAlert("Payment successful", "Receipt ID: " + receipt.ReceiptId, "OK");
@@ -184,9 +177,10 @@ namespace SampleApp
             await DisplayAlert("Payment error", "", "OK");
         }
 
-        internal async void Handler(object sender, IResult<ITransactionResult> result)
+        internal async void PaymentResultHandler(object sender, IResult<ITransactionResult> result)
         {
             await Navigation.PopAsync();
+
             if (result.HasError)
             {
                 await DisplayAlert("Payment error", "Code: " + result.Error.Code, "OK");
@@ -197,9 +191,10 @@ namespace SampleApp
             }
         }
 
-        internal async void PreAuthHandler(object sender, IResult<ITransactionResult> result)
+        internal async void PreAuthResultHandler(object sender, IResult<ITransactionResult> result)
         {
             await Navigation.PopAsync();
+
             if (result.HasError)
             {
                 await DisplayAlert("Pre Auth error", "Code: " + result.Error.Code, "OK");
@@ -238,7 +233,7 @@ namespace SampleApp
                 if (await DisplayAlert("Card added", "Perform token payment?", "Yes", "No"))
                 {
                     var page = new TokenPaymentPage(BuildJudo(), new TokenPaymentDefaultsViewModel(token.LastFour, token.ExpiryDate, token.Token, token.ConsumerToken, token.CardType));
-                    page.resultHandler += Handler;
+                    page.ResultHandler += PaymentResultHandler;
                     await Navigation.PushAsync(page);
                 }
             }

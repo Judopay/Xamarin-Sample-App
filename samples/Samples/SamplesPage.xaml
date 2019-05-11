@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<local:KeyboardAwarePage Title="Judopay" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:JudoDotNetXamarin;assembly=JudoDotNetXamarin" x:Class="SampleApp.SamplesPage">
-	<StackLayout Margin="16">
-		<Button x:Name="payButton" Text="Payment" />
-		<Button x:Name="preAuthButton" Text="Pre-auth" />
-		<Button x:Name="addCardButton" Text="Add card" />
-		<Button x:Name="tokenPaymentButton" Text="Token payment" />
-		<Button x:Name="tokenPreAuthButton" Text="Token Pre Auth" />
-		<Button x:Name="applePayPaymentButton" Text="Apple Pay payment" IsVisible="false" />
-		<Button x:Name="applePayPreAuthButton" Text="Apple Pay pre-auth" IsVisible="false" />
-		<Button x:Name="androidPayPaymentButton" Text="Android Pay payment" IsVisible="false"/>
-		<Button x:Name="androidPayPreAuthButton" Text="Android Pay pre-auth" IsVisible="false"/>
-	</StackLayout>
-</local:KeyboardAwarePage>
+<ContentPage Title="Judopay" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:JudoDotNetXamarin;assembly=JudoDotNetXamarin" x:Class="SampleApp.SamplesPage">
+    <ContentPage.Content>
+        <StackLayout Padding="16">
+            <Button x:Name="payButton" Text="Payment" />
+            <Button x:Name="preAuthButton" Text="Pre-auth" />
+            <Button x:Name="addCardButton" Text="Add card" />
+            <Button x:Name="tokenPaymentButton" Text="Token payment" />
+            <Button x:Name="tokenPreAuthButton" Text="Token pre-auth" />
+            <Button x:Name="applePayPaymentButton" Text="Apple Pay payment" IsVisible="false" />
+            <Button x:Name="applePayPreAuthButton" Text="Apple Pay pre-auth" IsVisible="false" />
+            <Button x:Name="androidPayPaymentButton" Text="Android Pay payment" IsVisible="false" />
+            <Button x:Name="androidPayPreAuthButton" Text="Android Pay pre-auth" IsVisible="false" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

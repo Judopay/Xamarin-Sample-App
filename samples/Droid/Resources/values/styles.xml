@@ -1,3 +1,64 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <resources>
+    
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Default dark theme -->
+    </style>
+    
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Default light theme -->
+    </style>
+
+    <!--<style name="JudoTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">#3AD958</item>
+        <item name="colorError">#FF6060</item>
+        <item name="colorControlNormal">#00FF00</item>
+        <item name="colorControlActivated">#FF04FA</item>
+    </style>-->
+
+    <style name="AHorribleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar background -->
+        <item name="colorPrimary">#ff0000</item>
+        
+        <!-- statusbar background -->
+        <item name="colorPrimaryDark">#ff5555</item>
+
+        <!-- window background -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <!-- edit text underline and label color when active (colorControlNormal and colorControlActivated overrides this) -->
+        <item name="colorAccent">#0fe</item>
+
+        <!-- edit text underline color - inactive -->
+        <item name="colorControlNormal">#00ff00</item>
+
+        <!-- edit text underline and label color - active; activity indicator color -->
+        <item name="colorControlActivated">#FF04FA</item>
+
+        <!-- edit text underline and label color - error -->
+        <item name="colorError">#0000ff</item>
+
+        <!-- security message, billing country spinner, dialog title and button text color -->
+        <item name="android:textColor">#ef0</item>
+        
+        <!-- edit text color; dialog text color -->
+        <item name="android:textColorPrimary">#05f</item>
+        
+        <!-- edit text hint, label and underline color when inactive, otherwise the edit text is colorAccent or colorControlActivated -->
+        <item name="android:textColorHint">#3AD958</item>
+
+        <!-- spinner style override -->
+        <item name="android:spinnerItemStyle">@style/JudoTextViewSpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/JudoTextViewSpinnerDropDownItem</item>
+        <!-- Override the dropdown item in support library -->
+        <item name="spinnerDropDownItemStyle">@style/JudoTextViewSpinnerDropDownItem</item>
+    </style>
+
+    <style name="JudoTextViewSpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <style name="JudoTextViewSpinnerDropDownItem" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">#f00</item>
+    </style>
 </resources>
