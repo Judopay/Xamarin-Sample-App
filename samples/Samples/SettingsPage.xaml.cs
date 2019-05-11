@@ -23,22 +23,13 @@ namespace SampleApp
         public void InitializeView()
         {
             maestroSwitch.On = Settings.MaestroAllowed;
-            maestroSwitch.PropertyChanged += (sender, e) =>
-            {
-                Settings.MaestroAllowed = maestroSwitch.On;
-            };
+            maestroSwitch.PropertyChanged += (sender, e) => Settings.MaestroAllowed = maestroSwitch.On;
 
             amexSwitch.On = Settings.AmexAllowed;
-            amexSwitch.PropertyChanged += (sender, e) =>
-            {
-                Settings.AmexAllowed = amexSwitch.On;
-            };
+            amexSwitch.PropertyChanged += (sender, e) => Settings.AmexAllowed = amexSwitch.On;
 
             avsSwitch.On = Settings.AvsEnabled;
-            avsSwitch.PropertyChanged += (sender, e) =>
-            {
-                Settings.AvsEnabled = avsSwitch.On;
-            };
+            avsSwitch.PropertyChanged += (sender, e) => Settings.AvsEnabled = avsSwitch.On;
 
             foreach (var currency in _currencies)
             {
@@ -46,10 +37,7 @@ namespace SampleApp
             }
 
             currencyPicker.SelectedIndex = _currencies.IndexOf(Settings.Currency);
-            currencyPicker.SelectedIndexChanged += (sender, e) =>
-            {
-                Settings.Currency = currencyPicker.Items[currencyPicker.SelectedIndex];
-            };
+            currencyPicker.SelectedIndexChanged += (sender, e) => Settings.Currency = currencyPicker.Items[currencyPicker.SelectedIndex];
         }
     }
 }

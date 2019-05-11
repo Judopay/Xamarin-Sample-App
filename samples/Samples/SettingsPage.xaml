@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Title="Settings" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleApp.SettingsPage" xmlns:local="clr-namespace:SampleApp;assembly=SampleApp">
+<ContentPage Title="Settings" ios:Page.UseSafeArea="true" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleApp.SettingsPage" xmlns:local="clr-namespace:SampleApp;assembly=SampleApp" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
     <ContentPage.Content>
-        <StackLayout>
-            <TableView>
-                <TableSection>
-                    <SwitchCell x:Name="avsSwitch" AutomationId="avsSwitch" Text="Address Verification Service (AVS)" />
-                    <SwitchCell x:Name="maestroSwitch" AutomationId="maestroSwitch" Text="Maestro" />
-                    <SwitchCell x:Name="amexSwitch" AutomationId="amexSwitch" Text="American Express" />
-                    <ViewCell>
-                        <ViewCell.View Padding="16, 16">
-                            <Picker x:Name="currencyPicker" Title="Currency" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                                <Picker.Items>
-                                </Picker.Items>
-                            </Picker>
-                        </ViewCell.View>
-                    </ViewCell>
-                </TableSection>
-            </TableView>
-        </StackLayout>
+        <TableView Intent="Settings" BackgroundColor="Transparent">
+            <TableView.Margin>
+                <OnPlatform x:TypeArguments="Thickness" Android="16" />
+            </TableView.Margin>
+            <TableSection Title="Configure Judopay">
+                <SwitchCell x:Name="avsSwitch" AutomationId="avsSwitch" Text="Address Verification Service (AVS)" />
+                <SwitchCell x:Name="maestroSwitch" AutomationId="maestroSwitch" Text="Maestro" />
+                <SwitchCell x:Name="amexSwitch" AutomationId="amexSwitch" Text="American Express" />
+                <ViewCell>
+                    <ViewCell.View>
+                        <StackLayout Orientation="Horizontal" Padding="16,0">
+                            <Label Text="Currency" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                            <Picker x:Name="currencyPicker" Title="Currency" VerticalOptions="Center" HorizontalOptions="End" />
+                        </StackLayout>
+                    </ViewCell.View>
+                </ViewCell>
+            </TableSection>
+        </TableView>
     </ContentPage.Content>
 </ContentPage>

@@ -1,12 +1,11 @@
-﻿using System;
-using JudoDotNetXamarin;
+﻿using JudoDotNetXamarin;
 
 namespace Samples
 {
-	public interface IAndroidPayService
-	{
-		void payment(Judo judo);
+    public interface IAndroidPayService
+    {
+        void Payment(Judo judo);
 
-		void preAuth(Judo judo);
-	}
+        void PreAuth(Judo judo);
+    }
 }

@@ -15,11 +15,11 @@ using Newtonsoft.Json;
 
 namespace Samples.Droid
 {
-    [Activity(Label = "Android Pay", Theme = "@style/JudoTheme.ActionBar", ScreenOrientation = ScreenOrientation.Locked, MainLauncher = false)]
+    [Activity(Label = "Google Pay", Theme = "@style/AppTheme", ScreenOrientation = ScreenOrientation.Locked, MainLauncher = false)]
     public class AndroidPayActivity : AppCompatActivity, GoogleApiClient.IOnConnectionFailedListener
     {
-        const int MaskedWalletRequest = 501;
-        const int FullWalletRequest = 601;
+        const int MaskedWalletRequestCode = 501;
+        const int FullWalletRequestCode = 601;
 
         public const string JudoExtra = "Judo";
         public const string IsPreAuthExtra = "IsPreAuth";
@@ -42,15 +42,15 @@ namespace Samples.Droid
 
             if (savedInstanceState == null)
             {
+                var walletOptions = new WalletClass.WalletOptions.Builder().SetEnvironment(WalletEnvironment).Build();
+
                 _googleApiClient = new GoogleApiClient.Builder(this)
-                     .AddApi(WalletClass.API, new WalletClass.WalletOptions.Builder()
-                     .SetEnvironment(WalletEnvironment)
-                     .Build())
+                    .AddApi(WalletClass.API, walletOptions)
                     .EnableAutoManage(this, this)
                     .Build();
 
                 CreateWalletFragment();
-                CheckAndroidPayAvailable();
+                CheckGooglePayAvailable();
             }
         }
 
@@ -60,11 +60,11 @@ namespace Samples.Droid
 
             switch (requestCode)
             {
-                case MaskedWalletRequest:
+                case MaskedWalletRequestCode:
                     PerformFullWalletRequest((MaskedWallet)data.GetParcelableExtra(WalletConstants.ExtraMaskedWallet));
                     break;
 
-                case FullWalletRequest:
+                case FullWalletRequestCode:
 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     PerformJudoPayment((FullWallet)data.GetParcelableExtra(WalletConstants.ExtraFullWallet));
 #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
@@ -86,40 +86,35 @@ namespace Samples.Droid
 
         public void OnConnectionFailed(ConnectionResult result)
         {
-            ShowToast("Connection failed! " + result.ErrorMessage + ", " + result.ErrorCode);
+            Toast.MakeText(this, "Connection failed! " + result.ErrorMessage + ", " + result.ErrorCode, ToastLength.Short).Show();
         }
 
-        void ShowToast(string text)
-        {
-            Toast.MakeText(this, text, ToastLength.Short).Show();
-        }
-
-        void CheckAndroidPayAvailable()
+        void CheckGooglePayAvailable()
         {
             var result = WalletClass.Payments.IsReadyToPay(_googleApiClient, null);
-            result.SetResultCallback(new AndroidPayCallback(_walletFragment));
+            result.SetResultCallback(new GooglePayCallback(_walletFragment));
         }
 
         void PerformFullWalletRequest(MaskedWallet maskedWallet)
         {
-            var request = Android.Gms.Wallet.FullWalletRequest.NewBuilder()
-                                           .SetGoogleTransactionId(maskedWallet.GoogleTransactionId)
-                                           .SetCart(Cart.NewBuilder()
-                                                    .SetCurrencyCode(_judo.Currency)
-                                                    .SetTotalPrice(_judo.Amount.ToString())
-                                                    .Build())
-                                           .Build();
-            WalletClass.Payments.LoadFullWallet(_googleApiClient, request, FullWalletRequest);
+            var request = FullWalletRequest.NewBuilder()
+                .SetGoogleTransactionId(maskedWallet.GoogleTransactionId)
+                .SetCart(Cart.NewBuilder()
+                        .SetCurrencyCode(_judo.Currency)
+                        .SetTotalPrice(_judo.Amount.ToString())
+                    .Build())
+                .Build();
+            WalletClass.Payments.LoadFullWallet(_googleApiClient, request, FullWalletRequestCode);
         }
 
         async Task PerformJudoPayment(FullWallet fullWallet)
         {
-            var androidPayModel = new AndroidPaymentModel()
+            var androidPayModel = new AndroidPaymentModel
             {
                 JudoId = _judo.JudoId,
                 Currency = _judo.Currency,
                 Amount = _judo.Amount,
-                Wallet = new AndroidWalletModel()
+                Wallet = new AndroidWalletModel
                 {
                     Environment = WalletEnvironment,
                     PublicKey = Resources.GetString(Resource.String.public_key),
@@ -147,10 +142,7 @@ namespace Samples.Droid
             {
                 return _paymentService.AndroidPayPreAuth(androidPayModel);
             }
-            else
-            {
-                return _paymentService.AndroidPayPayment(androidPayModel);
-            }
+            return _paymentService.AndroidPayPayment(androidPayModel);
         }
 
         void CreateWalletFragment()
@@ -161,33 +153,30 @@ namespace Samples.Droid
                 .SetBuyButtonWidth(WalletFragmentStyle.Dimension.MatchParent);
 
             var options = WalletFragmentOptions.NewBuilder()
-                                               .SetEnvironment(WalletEnvironment)
-                                               .SetTheme(WalletConstants.ThemeDark)
-                                               .SetFragmentStyle(walletStyle)
-                                               .SetMode(WalletFragmentMode.BuyButton)
-                                               .Build();
-
-            var parameters = PaymentMethodTokenizationParameters.NewBuilder()
-                                                                .SetPaymentMethodTokenizationType(WalletConstants.PaymentMethodTokenizationTypeNetworkToken)
-                                                                .AddParameter("publicKey", Resources.GetString(Resource.String.public_key))
-                                                                .Build();
+                .SetEnvironment(WalletEnvironment)
+                .SetTheme(WalletConstants.ThemeDark)
+                .SetFragmentStyle(walletStyle)
+                .SetMode(WalletFragmentMode.BuyButton)
+                .Build();
 
             _walletFragment = SupportWalletFragment.NewInstance(options);
 
-            var walletRequest = Android.Gms.Wallet.MaskedWalletRequest.NewBuilder()
-                                                   .SetMerchantName(Resources.GetString(Resource.String.app_name))
-                                       .SetCurrencyCode(_judo.Currency)
-                                       .SetEstimatedTotalPrice(_judo.Amount.ToString())
-                                                   .SetPaymentMethodTokenizationParameters(parameters)
-                                                   .SetCart(Cart.NewBuilder()
-                                                            .SetCurrencyCode(_judo.Currency)
-                                                            .SetTotalPrice(_judo.Amount.ToString())
-                                                            .Build())
-                                                    .Build();
+            var parameters = PaymentMethodTokenizationParameters.NewBuilder()
+                .SetPaymentMethodTokenizationType(WalletConstants.PaymentMethodTokenizationTypeNetworkToken)
+                .AddParameter("publicKey", Resources.GetString(Resource.String.public_key))
+                .Build();
+
+            var walletRequest = MaskedWalletRequest.NewBuilder()
+                .SetMerchantName(Resources.GetString(Resource.String.app_name))
+                .SetCurrencyCode(_judo.Currency)
+                .SetEstimatedTotalPrice(_judo.Amount.ToString())
+                .SetPaymentMethodTokenizationParameters(parameters)
+                .SetCart(Cart.NewBuilder().SetCurrencyCode(_judo.Currency).SetTotalPrice(_judo.Amount.ToString()).Build())
+                .Build();
 
             var startParams = WalletFragmentInitParams.NewBuilder()
                     .SetMaskedWalletRequest(walletRequest)
-                    .SetMaskedWalletRequestCode(MaskedWalletRequest)
+                    .SetMaskedWalletRequestCode(MaskedWalletRequestCode)
                     .Build();
 
             _walletFragment.Initialize(startParams);
@@ -197,11 +186,11 @@ namespace Samples.Droid
                 .Commit();
         }
 
-        class AndroidPayCallback : Java.Lang.Object, IResultCallback
+        class GooglePayCallback : Java.Lang.Object, IResultCallback
         {
             readonly SupportWalletFragment _walletFragment;
 
-            public AndroidPayCallback(SupportWalletFragment walletFragment)
+            public GooglePayCallback(SupportWalletFragment walletFragment)
             {
                 _walletFragment = walletFragment;
             }
@@ -215,7 +204,7 @@ namespace Samples.Droid
 
                     if (!enabled)
                     {
-                        Toast.MakeText(_walletFragment.Activity, "Android Pay is not available on your device", ToastLength.Short).Show();
+                        Toast.MakeText(_walletFragment.Activity, "Google Pay is not available on your device", ToastLength.Short).Show();
                     }
                 }
             }
