@@ -8,7 +8,7 @@ using Xamarin.Forms;
 namespace Samples.iOS
 {
     [Register("AppDelegate")]
-    public class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+    public class AppDelegate : Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {

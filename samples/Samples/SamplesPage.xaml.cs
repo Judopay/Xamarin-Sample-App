@@ -102,7 +102,12 @@ namespace SampleApp
 
         void ShowPreAuthForm(object sender, EventArgs e)
         {
-            var preAuthPage = new PreAuthPage(BuildJudo());
+            var defaults = new PaymentDefaultsViewModel
+            {
+                CardNumber = "4976 0000 0000 3436",
+                ExpiryDate = "12/20"
+            };
+            var preAuthPage = new PreAuthPage(BuildJudo(), defaults);
             preAuthPage.ResultHandler += PreAuthResultHandler;
             Navigation.PushAsync(preAuthPage);
         }
@@ -145,7 +150,7 @@ namespace SampleApp
             }
             else
             {
-                await DisplayAlert("No card saved", "Add card before attempting token payment", "OK");
+                await DisplayAlert("No card saved", "Add card before attempting token pre-auth", "OK");
             }
         }
 
@@ -189,6 +194,10 @@ namespace SampleApp
             {
                 await DisplayAlert("Payment successful", "Receipt ID: " + result.Response.ReceiptId, "OK");
             }
+            else if ("Declined".Equals(result.Response.Result))
+            {
+                await DisplayAlert("Payment declined", "Receipt ID: " + result.Response.ReceiptId, "OK");
+            }
         }
 
         internal async void PreAuthResultHandler(object sender, IResult<ITransactionResult> result)
@@ -197,11 +206,15 @@ namespace SampleApp
 
             if (result.HasError)
             {
-                await DisplayAlert("Pre Auth error", "Code: " + result.Error.Code, "OK");
+                await DisplayAlert("Pre-auth error", "Code: " + result.Error.Code, "OK");
             }
             else if ("Success".Equals(result.Response.Result))
             {
-                await DisplayAlert("Pre Auth successful", "Receipt ID: " + result.Response.ReceiptId, "OK");
+                await DisplayAlert("Pre-auth successful", "Receipt ID: " + result.Response.ReceiptId, "OK");
+            }
+            else if ("Declined".Equals(result.Response.Result))
+            {
+                await DisplayAlert("Pre-auth declined", "Receipt ID: " + result.Response.ReceiptId, "OK");
             }
         }
 
@@ -236,6 +249,10 @@ namespace SampleApp
                     page.ResultHandler += PaymentResultHandler;
                     await Navigation.PushAsync(page);
                 }
+            }
+            else if ("Declined".Equals(result.Response.Result))
+            {
+                await DisplayAlert("Card declined", "Receipt ID: " + result.Response.ReceiptId, "OK");
             }
         }
 
