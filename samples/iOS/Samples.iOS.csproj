@@ -137,10 +137,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="JudoDotNetXamarin">
-      <HintPath>..\packages\Xamarin.Judopay.5.0.3\lib\Xamarin.iOS10\JudoDotNetXamarin.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Judopay.5.0.4\lib\Xamarin.iOS10\JudoDotNetXamarin.dll</HintPath>
     </Reference>
     <Reference Include="JudoDotNetXamariniOSSDK">
-      <HintPath>..\packages\Xamarin.Judopay.5.0.3\lib\Xamarin.iOS10\JudoDotNetXamariniOSSDK.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Judopay.5.0.4\lib\Xamarin.iOS10\JudoDotNetXamariniOSSDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
