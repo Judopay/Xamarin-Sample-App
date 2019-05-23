@@ -56,10 +56,10 @@
     <Reference Include="Java.Interop" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="JudoDotNetXamarin">
-      <HintPath>..\packages\Xamarin.Judopay.5.0.3\lib\MonoAndroid10\JudoDotNetXamarin.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Judopay.5.0.4\lib\MonoAndroid10\JudoDotNetXamarin.dll</HintPath>
     </Reference>
     <Reference Include="JudoDotNetXamarinAndroidSDK">
-      <HintPath>..\packages\Xamarin.Judopay.5.0.3\lib\MonoAndroid10\JudoDotNetXamarinAndroidSDK.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Judopay.5.0.4\lib\MonoAndroid10\JudoDotNetXamarinAndroidSDK.dll</HintPath>
     </Reference>
     <Reference Include="FluentValidation">
       <HintPath>..\packages\FluentValidation.8.4.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
