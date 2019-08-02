@@ -15,6 +15,6 @@
   <ItemGroup>
     <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
-    <PackageReference Include="Xamarin.JudoPay" Version="5.1.1" />
+    <PackageReference Include="Xamarin.JudoPay" Version="5.1.2" />
   </ItemGroup>
 </Project>
