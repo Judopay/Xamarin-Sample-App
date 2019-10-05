@@ -269,7 +269,7 @@ namespace SampleApp
                 CountryCode = "GB",
                 CurrencyCode = "GBP",
                 ItemsSummaryLabel = "Shopping basket",
-                MerchantIdentifier = "merchant.com.judo.XamarinFormsSample",
+                MerchantIdentifier = "merchant.com.judopay.applepay-test",
                 SupportedCardNetworks = new List<ApplePayCardNetwork>
                 {
                     ApplePayCardNetwork.Amex,
