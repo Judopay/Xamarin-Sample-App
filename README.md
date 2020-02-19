@@ -4,11 +4,11 @@ The Judopay library lets you integrate card payments into your Xamarin Forms pro
 
 ## Requirements
 - Visual Studio 2019
-- Xamarin Forms 3.6.0
-- Xcode 10
-- Android 9 (API 28) SDK and build tools 28
+- Xamarin Forms 4.4.0
+- Xcode 11
+- Android 10 (API 29) SDK and build tools 29
 
-The SDK is compatible with Android 4.1 (API 16) and above and iOS 9 and above.
+The SDK is compatible with Android 4.4 (API 19) and above and iOS 9 and above.
 
 ## Getting started
 
